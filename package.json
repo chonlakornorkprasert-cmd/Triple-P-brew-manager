@@ -1,0 +1,22 @@
+{
+  "name": "triple-p-brew-manager",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node backend/server.js",
+    "dev:watch": "node --watch backend/server.js",
+    "start": "node backend/server.js",
+    "db:init": "node backend/scripts/init-db.js",
+    "db:migrate": "node backend/scripts/migrate-schema.js",
+    "db:replace-costing": "node backend/scripts/replace-data-from-costing.js",
+    "db:sync-costing": "node backend/scripts/sync-costing-masters.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  }
+}

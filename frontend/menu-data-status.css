@@ -1,0 +1,19 @@
+.menu-empty strong,
+.menu-empty span { display: block; }
+.menu-empty strong { color: #a8493d; font-size: 14px; }
+.menu-empty span { margin: 5px 0 12px; }
+.menu-empty button { border: 0; background: #1f6b4a; color: #fff; border-radius: 8px; padding: 8px 13px; cursor: pointer; }
+
+/* Food category labels share a name with dashboard thumbnail styles. */
+#menu tr.menu-group-row { display: table-row; width: auto; height: auto; border-radius: 0; }
+#menu .menu-group-row td { height: 48px; vertical-align: middle; }
+#menu .menu-group-row strong { display: inline; margin-left: 4px; }
+#menu .menu-group-row b { float: right; line-height: 26px; }
+#menu .menu-category-pill { display: inline-block; width: auto; height: auto; border-radius: 12px; padding: 3px 8px; line-height: 1.5; }
+#menu .staff-menu-row td { vertical-align: middle; }
+#menu .staff-menu-row td:first-child { min-width: 260px; }
+#menu .staff-menu-row td:first-child > strong { font-size: 14px; line-height: 1.6; }
+#menu .staff-menu-row td:first-child > small { margin: 5px 0 8px; line-height: 1.8; }
+#menu .staff-menu-row td:first-child > button { display: inline-block; margin-top: 3px; }
+.order-menu-button .order-menu-photo { width: 100%; height: 125px; object-fit: cover; border-radius: 8px; display: block; }
+.order-menu-button .order-photo-placeholder { display: grid; place-items: center; background: #e8efe9; font-size: 38px; }

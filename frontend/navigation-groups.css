@@ -1,0 +1,8 @@
+.sidebar nav{display:flex;flex-direction:column;gap:16px;overflow-y:auto;min-height:0;flex:1;padding:0 3px 14px;scrollbar-width:thin;scrollbar-color:#4a5b50 transparent}
+.navigation-group{display:grid;gap:4px;flex-shrink:0}
+.navigation-group h2{margin:0 0 3px;padding:0 14px;color:#80978a;font-size:10px;font-weight:600;letter-spacing:.5px}
+.navigation-group .nav-item{width:100%;min-height:43px;padding:10px 14px;font-size:13px}
+.navigation-group+.navigation-group{border-top:1px solid #304039;padding-top:12px}
+.sidebar .brand{margin-bottom:25px;flex-shrink:0}
+.sidebar .side-bottom{margin-top:0;flex-shrink:0;padding-top:0;border-top:0}
+.sidebar .profile{margin-top:0;padding-top:14px}

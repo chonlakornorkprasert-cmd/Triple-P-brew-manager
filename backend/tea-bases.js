@@ -1,0 +1,25 @@
+export async function setupTeaBases(app,pool){
+ await pool.query('CREATE TABLE IF NOT EXISTS tea_production_items(batch_id INTEGER REFERENCES production_batches(id),ingredient_id INTEGER REFERENCES ingredients(id),qty NUMERIC NOT NULL)');
+ await pool.query(`CREATE TABLE IF NOT EXISTS tea_base_recipes(code TEXT PRIMARY KEY,name TEXT NOT NULL,output_ingredient_id INTEGER REFERENCES ingredients(id),yield_ml NUMERIC NOT NULL,instructions TEXT NOT NULL,items JSONB NOT NULL)`);
+ const ingredients=(await pool.query('SELECT * FROM ingredients')).rows;
+ async function find(sku,name,unit){let item=ingredients.find(x=>x.sku===sku||x.name===name);if(!item){item=(await pool.query(`INSERT INTO ingredients(sku,name,category,purchase_qty,purchase_unit,purchase_price,base_unit,conversion_to_base,supplier) VALUES($1,$2,'วัตถุดิบ',1,$3,0,$3,1,'รอกรอกราคาซื้อจริง') RETURNING *`,[sku,name,unit])).rows[0];ingredients.push(item)}return item.id}
+ const gold=await find('TEA-CHA-TRA-MUE-GOLD','ชาตรามือ Gold Label (ฉลากทอง)','g'),red=await find('TEA-CHA-TRA-MUE-RED','ชาตรามือ ฉลากแดง','g'),green=await find('ING-026','ชาเขียว ตรามือ','g'),extra=await find('TEA-EXTRA-GREEN','Extra Green','g'),water=await find('ING-022','น้ำ','ml');
+ const instructions='เครื่องดริปโหมดปกติ ไม่กด Aroma/Strong ยกกากทันที และคนเบสก่อนใช้';
+ for(const [code,name,output,yieldMl,items,range] of [
+ ['BASE-THAI-DRIP','เบสชาไทย',ingredients.find(x=>x.name==='เบสชาไทย')?.id,700,[[gold,32],[red,15.5],[water,820]],'ผลผลิตเป้าหมาย 680–720 ml'],
+ ['BASE-GREEN-DRIP','เบสชาเขียว',ingredients.find(x=>x.name==='เบสชาเขียว')?.id,590,[[green,30],[extra,10],[water,700]],'ผลผลิตเป้าหมาย 570–610 ml']]){
+ await pool.query('INSERT INTO tea_base_recipes(code,name,output_ingredient_id,yield_ml,instructions,items) VALUES($1,$2,$3,$4,$5,$6) ON CONFLICT(code) DO NOTHING',[code,name,output,yieldMl,`${instructions} · ${range}`,JSON.stringify(items.map(([ingredient_id,qty])=>({ingredient_id,qty})))]);
+ }
+ app.post('/api/tea-bases/produce',async(req,res)=>{
+ const b=req.body,rounds=Number(b.rounds),actual=Number(b.output_qty);if(!Number.isInteger(rounds)||rounds<1||rounds>100||!Number.isFinite(actual)||actual<=0||!String(b.batch_code||'').trim())return res.status(400).json({error:'กรุณาระบุจำนวนรอบและผลผลิตจริงให้ถูกต้อง'});
+ const c=await pool.connect();try{await c.query('BEGIN');const base=(await c.query('SELECT * FROM tea_base_recipes WHERE code=$1',[b.code])).rows[0];if(!base)throw Error('ไม่พบสูตรเบส');const exists=await c.query('SELECT id FROM production_batches WHERE batch_code=$1',[b.batch_code]);if(exists.rows.length){await c.query('ROLLBACK');return res.json({id:exists.rows[0].id,already_saved:true})}
+ let total=0;const inputs=[];for(const item of base.items){const ingredient=(await c.query('SELECT ic.*,sb.stock_qty FROM ingredient_costs ic JOIN stock_balances sb ON sb.ingredient_id=ic.id WHERE ic.id=$1',[item.ingredient_id])).rows[0],qty=Number(item.qty)*rounds;if(!ingredient||Number(ingredient.stock_qty)<qty)throw Error(`สต็อกไม่พอ: ${ingredient?.name||item.ingredient_id} ต้องใช้ ${qty} ${ingredient?.base_unit||''}`);total+=qty*Number(ingredient.cost_per_base_unit);inputs.push({...item,qty,name:ingredient.name})}
+ const first=inputs[0];const batch=(await c.query('INSERT INTO production_batches(batch_code,output_ingredient_id,output_qty,input_ingredient_id,input_qty,total_cost,note) VALUES($1,$2,$3,$4,$5,$6,$7) RETURNING *',[b.batch_code,base.output_ingredient_id,actual,first.ingredient_id,first.qty,total,`${base.name} ${rounds} รอบ | ${base.instructions}`])).rows[0];
+ for(const input of inputs){await c.query('INSERT INTO tea_production_items(batch_id,ingredient_id,qty) VALUES($1,$2,$3)',[batch.id,input.ingredient_id,input.qty]);await c.query("INSERT INTO stock_transactions(ingredient_id,txn_type,qty_base,reference,note) VALUES($1,'USE',$2,$3,$4)",[input.ingredient_id,input.qty,b.batch_code,`ผลิต ${base.name}`])}
+ await c.query("INSERT INTO stock_transactions(ingredient_id,txn_type,qty_base,unit_cost,reference,note) VALUES($1,'ADJUST_IN',$2,$3,$4,'ผลิตเบสชา')",[base.output_ingredient_id,actual,total/actual,b.batch_code]);
+ await c.query('UPDATE ingredients SET purchase_price=$1,purchase_qty=$2,conversion_to_base=1,updated_at=NOW() WHERE id=$3',[total,actual,base.output_ingredient_id]);
+ await c.query('COMMIT');res.status(201).json(batch);
+ }catch(error){await c.query('ROLLBACK');res.status(400).json({error:error.message})}finally{c.release()}
+ });
+ app.get('/api/tea-bases',async(_req,res)=>{const bases=(await pool.query('SELECT * FROM tea_base_recipes ORDER BY code')).rows;const costs=(await pool.query('SELECT * FROM ingredient_costs')).rows;res.json(bases.map(base=>{const items=base.items.map(item=>{const ingredient=costs.find(x=>x.id===item.ingredient_id);return {...item,name:ingredient.name,unit:ingredient.base_unit,cost:Number(ingredient.cost_per_base_unit)*item.qty,missing_price:Number(ingredient.purchase_price)===0}});const cost=items.reduce((sum,x)=>sum+x.cost,0);return {...base,items,cost,cost_per_ml:cost/Number(base.yield_ml),complete:!items.some(x=>x.missing_price&&x.name!=='น้ำ')}}))});
+}

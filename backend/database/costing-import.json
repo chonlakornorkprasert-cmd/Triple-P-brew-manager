@@ -1,0 +1,1874 @@
+{
+  "source": "C:\\Users\\ChonlakornOrkprasert\\OneDrive - FlowMetric Solution\\Documents\\My Personal Document\\ร้านกาแฟ Triple P\\Oct\\Triple_P_Brew_Costing_LineMan_20261020_colored.xlsx",
+  "source_modified": 1792487858.6039069,
+  "online_gp_percent": 32.1,
+  "ingredients": [
+    {
+      "name": "เบสชาไทย",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 700,
+      "purchase_unit": "แพ็ก 700 ml",
+      "purchase_price": 12.7,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "สูตรร้าน Triple P Brew",
+      "sku": "ING-001"
+    },
+    {
+      "name": "นมข้นหวาน",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 2000,
+      "purchase_unit": "แพ็ก 2000 ml",
+      "purchase_price": 145,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-002"
+    },
+    {
+      "name": "นมข้นจืด",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 405,
+      "purchase_unit": "แพ็ก 405 ml",
+      "purchase_price": 28,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-003"
+    },
+    {
+      "name": "คอฟฟีเมต",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 450,
+      "purchase_unit": "แพ็ก 450 g",
+      "purchase_price": 90,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการร้าน",
+      "sku": "ING-004"
+    },
+    {
+      "name": "ฟองนม (นมสด Meiji)",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 2000,
+      "purchase_unit": "แพ็ก 2000 ml",
+      "purchase_price": 99,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาเดียวกับนมสด Meiji",
+      "sku": "ING-005"
+    },
+    {
+      "name": "แก้ว 20 oz + ฝา",
+      "category": "บรรจุภัณฑ์",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 ชุด",
+      "purchase_price": 3.2,
+      "base_unit": "ชุด",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ข้อมูลผู้ใช้",
+      "sku": "ING-007"
+    },
+    {
+      "name": "นมสด Meiji",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 2000,
+      "purchase_unit": "แพ็ก 2000 ml",
+      "purchase_price": 99,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาเริ่มต้นจากข้อมูลเดิม",
+      "sku": "ING-009"
+    },
+    {
+      "name": "หลอด/ถุง/ซีล",
+      "category": "บรรจุภัณฑ์",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 ชุด",
+      "purchase_price": 1.2,
+      "base_unit": "ชุด",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "สมมติฐานร้าน",
+      "sku": "ING-011"
+    },
+    {
+      "name": "ผงโกโก้ Tulip",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 350,
+      "purchase_unit": "แพ็ก 350 g",
+      "purchase_price": 299,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-012"
+    },
+    {
+      "name": "ผงโกโก้ Van Houten",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 350,
+      "purchase_unit": "แพ็ก 350 g",
+      "purchase_price": 342,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-013"
+    },
+    {
+      "name": "เมล็ดกาแฟ Bluekoff",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 250,
+      "purchase_unit": "แพ็ก 250 g",
+      "purchase_price": 150,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "https://www.bluekoff.com/",
+      "sku": "ING-014"
+    },
+    {
+      "name": "ไซรัปคาราเมล",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 750,
+      "purchase_unit": "แพ็ก 750 ml",
+      "purchase_price": 180,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-015"
+    },
+    {
+      "name": "ไซรัปวานิลลา",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 750,
+      "purchase_unit": "แพ็ก 750 ml",
+      "purchase_price": 180,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-016"
+    },
+    {
+      "name": "น้ำผึ้ง",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "แพ็ก 1000 ml",
+      "purchase_price": 150,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-017"
+    },
+    {
+      "name": "น้ำมะนาว",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "แพ็ก 1000 ml",
+      "purchase_price": 60,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-018"
+    },
+    {
+      "name": "เบสชาเขียว",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 590,
+      "purchase_unit": "แพ็ก 590 ml",
+      "purchase_price": 19.333333333333336,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "สูตรทดลอง Triple P Brew",
+      "sku": "ING-019"
+    },
+    {
+      "name": "น้ำส้ม",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "แพ็ก 1000 ml",
+      "purchase_price": 89,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ประมาณการ",
+      "sku": "ING-020"
+    },
+    {
+      "name": "น้ำเชื่อม 1:1",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 ml",
+      "purchase_price": 0.2,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ข้อมูลจากสูตร Excel",
+      "sku": "ING-021"
+    },
+    {
+      "name": "น้ำ",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 ml",
+      "purchase_price": 0,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ข้อมูลจากสูตร Excel",
+      "sku": "ING-022"
+    },
+    {
+      "name": "Tulip Dark Brown Cocoa",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 g",
+      "purchase_price": 0,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ภาพสูตรที่ผู้ใช้แนบ",
+      "sku": "ING-023"
+    },
+    {
+      "name": "ไซรัปมิ้นต์",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 ml",
+      "purchase_price": 0,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ภาพสูตรที่ผู้ใช้แนบ",
+      "sku": "ING-024"
+    },
+    {
+      "name": "ผงมัทฉะ",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 g",
+      "purchase_price": 0,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ภาพสูตรที่ผู้ใช้แนบ",
+      "sku": "ING-025"
+    },
+    {
+      "name": "ผงชาเขียวตามภาพ",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "แพ็ก 1 g",
+      "purchase_price": 0,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ภาพสูตรที่ผู้ใช้แนบ",
+      "sku": "ING-026"
+    },
+    {
+      "sku": "ING-031",
+      "name": "ถั่วงอก",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุง 1 กก.",
+      "purchase_price": 25,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | Makro ราคาอ้างอิง 25 บาท/กก. | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-033",
+      "name": "ถั่วลิสงคั่วบด",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 ช้อนโต๊ะ",
+      "purchase_price": 0,
+      "base_unit": "ช้อนโต๊ะ",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-034",
+      "name": "กระเทียมเจียว",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 ช้อนโต๊ะ",
+      "purchase_price": 0,
+      "base_unit": "ช้อนโต๊ะ",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-036",
+      "name": "น้ำปลา",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 ml",
+      "purchase_price": 0,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-039",
+      "name": "พริกป่น",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 g",
+      "purchase_price": 0,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-044",
+      "name": "กระเทียม",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 กลีบ",
+      "purchase_price": 0,
+      "base_unit": "กลีบ",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-045",
+      "name": "พริกไทยเม็ด",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 ช้อนชา",
+      "purchase_price": 0,
+      "base_unit": "ช้อนชา",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-046",
+      "name": "ซีอิ๊วขาว",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 ml",
+      "purchase_price": 0,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-047",
+      "name": "เกลือ",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 g",
+      "purchase_price": 0,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-048",
+      "name": "น้ำพริกเผา",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "1 ml",
+      "purchase_price": 0,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-038",
+      "name": "น้ำตาลทราย",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "1 g",
+      "purchase_price": 27,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "รอกรอกราคาซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-032",
+      "name": "ผักบุ้ง",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุง 1 กก.",
+      "purchase_price": 30,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 30 บาท/กก. | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-035",
+      "name": "ต้นหอมผักชีซอย",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "ชุด 10 กรัม",
+      "purchase_price": 1,
+      "base_unit": "ชุด",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 100 บาท/กก.; 1 ชุด=10g | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-037",
+      "name": "น้ำมะนาวสด",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ขวด 1 ลิตร",
+      "purchase_price": 140,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณน้ำคั้น 140 บาท/ลิตร | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-040",
+      "name": "น้ำมันหมู",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ขวด 1 ลิตร",
+      "purchase_price": 90,
+      "base_unit": "ml",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 90 บาท/ลิตร | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-041",
+      "name": "กระดูกหมู",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุง 1 กก.",
+      "purchase_price": 70,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 70 บาท/กก. | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-042",
+      "name": "หัวไชเท้า",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "หัว 500 กรัม",
+      "purchase_price": 15,
+      "base_unit": "หัว",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 30 บาท/กก.; 1 หัว=500g | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-043",
+      "name": "รากผักชี",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1,
+      "purchase_unit": "ราก 5 กรัม",
+      "purchase_price": 0.65,
+      "base_unit": "ราก",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 130 บาท/กก.; 1 ราก=5g | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-027",
+      "name": "เส้นเล็กหรือเส้นหมี่",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุงสด 1 กก.",
+      "purchase_price": 35,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณเส้นสด 35 บาท/กก.; ไม่ใช่เส้นแห้ง | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-028",
+      "name": "บะหมี่ไข่",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุง 1 กก.",
+      "purchase_price": 65,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 65 บาท/กก. | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-029",
+      "name": "หมูสับ",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุง 1 กก.",
+      "purchase_price": 160,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 160 บาท/กก. | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    },
+    {
+      "sku": "ING-030",
+      "name": "ลูกชิ้นหมู",
+      "category": "วัตถุดิบ",
+      "purchase_qty": 1000,
+      "purchase_unit": "ถุง 1 กก.",
+      "purchase_price": 120,
+      "base_unit": "g",
+      "conversion_to_base": 1,
+      "reorder_level": 0,
+      "supplier": "ราคาวางแผน 2026-11-03 | ประมาณ 120 บาท/กก. | รอใบซื้อจริง",
+      "barcode": null,
+      "expiry_date": null
+    }
+  ],
+  "recipes": [
+    {
+      "code": "T01",
+      "name": "ชาไทย หวานปกติ / Thai Tea Regular",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 130
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "คอฟฟีเมต",
+          "qty": 10
+        },
+        {
+          "ingredient": "ฟองนม (นมสด Meiji)",
+          "qty": 10
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 65,
+      "serving_size": "20 oz",
+      "note": "เบส 130ml + ข้นหวาน 40 ml + ข้นจืด 30 ml + คอฟฟีเมต 10 g + ฟองนม 20 ml"
+    },
+    {
+      "code": "T02",
+      "name": "ชาไทย หวานน้อย / Thai Tea Less Sweet",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 130
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 20
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 65,
+      "serving_size": "20 oz",
+      "note": "เบส 130ml + ข้นหวาน 30 ml + ข้นจืด 40 ml + คอฟฟีเมต 10 g + ฟองนม 10 ml"
+    },
+    {
+      "code": "T03",
+      "name": "ชาไทยโกโก้ / Thai Tea Cocoa",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 110
+        },
+        {
+          "ingredient": "ผงโกโก้ Tulip",
+          "qty": 8
+        },
+        {
+          "ingredient": "ผงโกโก้ Van Houten",
+          "qty": 2
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 55,
+      "online_selling_price": 80,
+      "serving_size": "20 oz",
+      "note": "เบสชา 110 ml โกโก้ Tulip 8 g + Van Houten 2 g"
+    },
+    {
+      "code": "T04",
+      "name": "ชาไทยกาแฟ / Thai Tea Coffee",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 100
+        },
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 10
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 55,
+      "online_selling_price": 80,
+      "serving_size": "20 oz",
+      "note": "เบสชา 100 ml + เอสเพรสโซจาก Bluekoff 18 g | กาแฟ 40 ml"
+    },
+    {
+      "code": "T05",
+      "name": "ชาไทยคาราเมล / Thai Tea Caramel",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 120
+        },
+        {
+          "ingredient": "ไซรัปคาราเมล",
+          "qty": 10
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 70,
+      "serving_size": "20 oz",
+      "note": "เบสชา 120 ml + คาราเมล 10 ml"
+    },
+    {
+      "code": "T06",
+      "name": "ชาไทยวานิลลา / Thai Tea Vanilla",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 120
+        },
+        {
+          "ingredient": "ไซรัปวานิลลา",
+          "qty": 10
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 70,
+      "serving_size": "20 oz",
+      "note": "เบสชา 120 ml + วานิลลา 10 ml"
+    },
+    {
+      "code": "T07",
+      "name": "ชาไทยน้ำผึ้งมะนาว / Honey Lime Tea",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 130
+        },
+        {
+          "ingredient": "น้ำผึ้ง",
+          "qty": 25
+        },
+        {
+          "ingredient": "น้ำมะนาว",
+          "qty": 20
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 70,
+      "serving_size": "20 oz",
+      "note": "เบสชา 130 ml + น้ำผึ้ง 25 + มะนาว 20 ml ไม่ใส่นม"
+    },
+    {
+      "code": "G01",
+      "name": "ชาเขียวนม หวานปกติ / Green Tea Regular",
+      "category": "ชาเขียว / Green Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาเขียว",
+          "qty": 130
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 50
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 10
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 65,
+      "serving_size": "20 oz",
+      "note": "เบสชาเขียว 130 ml + ข้นหวาน 50+ ข้นจืด30 + นมสด 10 ml +คอฟฟีเมต 10 g"
+    },
+    {
+      "code": "G02",
+      "name": "ชาเขียวนม หวานน้อย / Green Tea Less Sweet",
+      "category": "ชาเขียว / Green Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาเขียว",
+          "qty": 130
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 20
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 65,
+      "serving_size": "20 oz",
+      "note": "เบสชาเขียว 130 ml + ข้นหวาน 40 + ข้นจืด30 + นมสด 10 ml +คอฟฟีเมต 10 g"
+    },
+    {
+      "code": "C01",
+      "name": "อเมริกาโนเย็น / Iced Americano",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 65,
+      "serving_size": "20 oz",
+      "note": "Bluekoff 18 g สกัด 36–40 g เติมน้ำและน้ำแข็ง + น้ำเปล่า 150"
+    },
+    {
+      "code": "C02",
+      "name": "อเมริกาโนน้ำผึ้ง / Honey Americano",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "น้ำผึ้ง",
+          "qty": 20
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 45,
+      "online_selling_price": 75,
+      "serving_size": "20 oz",
+      "note": "เอสเพรสโซ + น้ำผึ้ง 20 ml"
+    },
+    {
+      "code": "C03",
+      "name": "อเมริกาโนส้ม / Orange Americano",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "น้ำส้ม",
+          "qty": 120
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 60,
+      "online_selling_price": 90,
+      "serving_size": "20 oz",
+      "note": "เอสเพรสโซ + น้ำส้ม 120 ml"
+    },
+    {
+      "code": "C04",
+      "name": "ลาเต้เย็น / Iced Latte",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 130
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 20
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 55,
+      "online_selling_price": 80,
+      "serving_size": "20 oz",
+      "note": "เอสเพรสโซ + นมสด 130 + ข้นหวาน 20 ml"
+    },
+    {
+      "code": "C05",
+      "name": "คาราเมลลาเต้ / Caramel Latte",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 120
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 15
+        },
+        {
+          "ingredient": "ไซรัปคาราเมล",
+          "qty": 15
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 60,
+      "online_selling_price": 90,
+      "serving_size": "20 oz",
+      "note": "นมสด 120 + ข้นหวาน 15 + คาราเมล 15 ml"
+    },
+    {
+      "code": "C06",
+      "name": "วานิลลาลาเต้ / Vanilla Latte",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 120
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 15
+        },
+        {
+          "ingredient": "ไซรัปวานิลลา",
+          "qty": 15
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 60,
+      "online_selling_price": 90,
+      "serving_size": "20 oz",
+      "note": "นมสด 120 + ข้นหวาน 15 + วานิลลา 15 ml"
+    },
+    {
+      "code": "C07",
+      "name": "มอคค่าเย็น / Iced Mocha",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "ผงโกโก้ Tulip",
+          "qty": 12
+        },
+        {
+          "ingredient": "ผงโกโก้ Van Houten",
+          "qty": 3
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 100
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 80,
+      "online_selling_price": 115,
+      "serving_size": "20 oz",
+      "note": "Tulip 12 g + Van Houten 3 g + นมสด 100 ml"
+    },
+    {
+      "code": "C08",
+      "name": "คาปูชิโนเย็น / Iced Cappuccino",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 100
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 55,
+      "online_selling_price": 80,
+      "serving_size": "20 oz",
+      "note": "ข้นหวาน 20 + ข้นจืด 20 + นมสด 100 ml"
+    },
+    {
+      "code": "C09",
+      "name": "เอสเพรสโซเย็นแบบไทย / Thai Iced Espresso",
+      "category": "กาแฟ / Coffee",
+      "items": [
+        {
+          "ingredient": "เมล็ดกาแฟ Bluekoff",
+          "qty": 18
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 40
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 50,
+      "online_selling_price": 75,
+      "serving_size": "20 oz",
+      "note": "ข้นหวาน 30 + ข้นจืด 20 + นมสด 40 ml"
+    },
+    {
+      "code": "T08",
+      "name": "ชามะนาว หวานปกติ / Thai Lime Tea Regular",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 100
+        },
+        {
+          "ingredient": "น้ำเชื่อม 1:1",
+          "qty": 30
+        },
+        {
+          "ingredient": "น้ำมะนาว",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 60,
+      "serving_size": "20 oz",
+      "note": "เบสชา 100 ml + น้ำ 60 ml + น้ำเชื่อม 30 ml + มะนาว 20 ml เติมมะนาวหลังชาเย็นลง (หวานปกติ)"
+    },
+    {
+      "code": "T09",
+      "name": "ชามะนาว หวานน้อย / Thai Lime Tea Less Sweet",
+      "category": "ชาไทย / Thai Tea",
+      "items": [
+        {
+          "ingredient": "เบสชาไทย",
+          "qty": 100
+        },
+        {
+          "ingredient": "น้ำเชื่อม 1:1",
+          "qty": 20
+        },
+        {
+          "ingredient": "น้ำมะนาว",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 60,
+      "serving_size": "20 oz",
+      "note": "เบสชา 100 ml + น้ำ 70 ml + น้ำเชื่อม 20 ml + มะนาว 20 ml เติมมะนาวหลังชาเย็นลง (หวานน้อย)"
+    },
+    {
+      "code": "K01",
+      "name": "Triple P Dark Cocoa / Triple P Signature Cocoa หวานปกติ",
+      "category": "โกโก้ / Cocoa",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 50
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 80
+        },
+        {
+          "ingredient": "ผงโกโก้ Van Houten",
+          "qty": 15
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 65,
+      "online_selling_price": 95,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "K01-M",
+      "name": "Triple P Dark Cocoa / Triple P Signature Cocoa หวานน้อย",
+      "category": "โกโก้ / Cocoa",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 60
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 50
+        },
+        {
+          "ingredient": "ผงโกโก้ Van Houten",
+          "qty": 15
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 60,
+      "online_selling_price": 90,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "K02",
+      "name": "Kids Cocoa หวานปกติ",
+      "category": "โกโก้ / Cocoa",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 50
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 80
+        },
+        {
+          "ingredient": "Tulip Dark Brown Cocoa",
+          "qty": 15
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 55,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "K02-M",
+      "name": "Kids Cocoa หวานน้อย",
+      "category": "โกโก้ / Cocoa",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 50
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 80
+        },
+        {
+          "ingredient": "Tulip Dark Brown Cocoa",
+          "qty": 15
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 40,
+      "online_selling_price": 55,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "K03",
+      "name": "Cocoa Mint หวานปกติ",
+      "category": "โกโก้ / Cocoa",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 50
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 80
+        },
+        {
+          "ingredient": "ผงโกโก้ Van Houten",
+          "qty": 15
+        },
+        {
+          "ingredient": "ไซรัปมิ้นต์",
+          "qty": 10
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 30
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 65,
+      "online_selling_price": 95,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "K03-M",
+      "name": "Cocoa Mint หวานน้อย",
+      "category": "โกโก้ / Cocoa",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 50
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 80
+        },
+        {
+          "ingredient": "ผงโกโก้ Van Houten",
+          "qty": 15
+        },
+        {
+          "ingredient": "ไซรัปมิ้นต์",
+          "qty": 10
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 20
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 65,
+      "online_selling_price": 95,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "M01",
+      "name": "Matcha Latte หวานปกติ",
+      "category": "ชา / Matcha Latte",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 60
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 30
+        },
+        {
+          "ingredient": "ผงมัทฉะ",
+          "qty": 3
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 50,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "M01-M",
+      "name": "Matcha Latte หวานน้อย",
+      "category": "ชา / Matcha Latte",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 60
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 40
+        },
+        {
+          "ingredient": "ผงมัทฉะ",
+          "qty": 3
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 50,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "G03",
+      "name": "Green Tea Latte หวานปกติ",
+      "category": "ชา / Green Tea Latte",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 60
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 30
+        },
+        {
+          "ingredient": "ผงชาเขียวตามภาพ",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 40
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 50,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "G03-M",
+      "name": "Green Tea Latte หวานน้อย",
+      "category": "ชา / Green Tea Latte",
+      "items": [
+        {
+          "ingredient": "น้ำ",
+          "qty": 60
+        },
+        {
+          "ingredient": "นมสด Meiji",
+          "qty": 40
+        },
+        {
+          "ingredient": "ผงชาเขียวตามภาพ",
+          "qty": 20
+        },
+        {
+          "ingredient": "นมข้นจืด",
+          "qty": 40
+        },
+        {
+          "ingredient": "นมข้นหวาน",
+          "qty": 30
+        },
+        {
+          "ingredient": "แก้ว 20 oz + ฝา",
+          "qty": 1
+        },
+        {
+          "ingredient": "หลอด/ถุง/ซีล",
+          "qty": 1
+        }
+      ],
+      "selling_price": 35,
+      "online_selling_price": 50,
+      "serving_size": "20 oz",
+      "note": "น้ำ 60 ml รวมค่าใช้จ่ายน้ำในรายการน้ำ/น้ำแข็ง/ไฟฟ้าแล้ว"
+    },
+    {
+      "code": "NOODLE-BA-MEE-TOMYUM",
+      "name": "บะหมี่ต้มยำ",
+      "category": "ก๋วยเตี๋ยว",
+      "serving_size": "1 ชาม",
+      "selling_price": 0,
+      "online_selling_price": 0,
+      "note": "สูตร 4 ชาม แปลงเป็นสูตรต่อชาม",
+      "items": [
+        {
+          "ingredient": "บะหมี่ไข่",
+          "qty": 125
+        },
+        {
+          "ingredient": "หมูสับ",
+          "qty": 75
+        },
+        {
+          "ingredient": "ลูกชิ้นหมู",
+          "qty": 50
+        },
+        {
+          "ingredient": "ถั่วงอก",
+          "qty": 50
+        },
+        {
+          "ingredient": "ผักบุ้ง",
+          "qty": 50
+        },
+        {
+          "ingredient": "ถั่วลิสงคั่วบด",
+          "qty": 1
+        },
+        {
+          "ingredient": "กระเทียมเจียว",
+          "qty": 1
+        },
+        {
+          "ingredient": "ต้นหอมผักชีซอย",
+          "qty": 1
+        },
+        {
+          "ingredient": "กระดูกหมู",
+          "qty": 250
+        },
+        {
+          "ingredient": "น้ำ",
+          "qty": 1000
+        },
+        {
+          "ingredient": "หัวไชเท้า",
+          "qty": 0.25
+        },
+        {
+          "ingredient": "รากผักชี",
+          "qty": 0.75
+        },
+        {
+          "ingredient": "กระเทียม",
+          "qty": 2.5
+        },
+        {
+          "ingredient": "พริกไทยเม็ด",
+          "qty": 0.25
+        },
+        {
+          "ingredient": "ซีอิ๊วขาว",
+          "qty": 11.25
+        },
+        {
+          "ingredient": "เกลือ",
+          "qty": 1.25
+        },
+        {
+          "ingredient": "น้ำพริกเผา",
+          "qty": 15
+        },
+        {
+          "ingredient": "น้ำปลา",
+          "qty": 15
+        },
+        {
+          "ingredient": "น้ำมะนาวสด",
+          "qty": 22.5
+        },
+        {
+          "ingredient": "น้ำตาลทราย",
+          "qty": 4
+        },
+        {
+          "ingredient": "พริกป่น",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "code": "NOODLE-DRY-TOMYUM",
+      "name": "ก๋วยเตี๋ยวแห้งยำ",
+      "category": "ก๋วยเตี๋ยว",
+      "serving_size": "1 ชาม",
+      "selling_price": 0,
+      "online_selling_price": 0,
+      "note": "สูตรต่อชาม ใช้ฐาน 10 ชามจากช่วง 8–10 ชาม",
+      "items": [
+        {
+          "ingredient": "เส้นเล็กหรือเส้นหมี่",
+          "qty": 100
+        },
+        {
+          "ingredient": "หมูสับ",
+          "qty": 50
+        },
+        {
+          "ingredient": "ลูกชิ้นหมู",
+          "qty": 50
+        },
+        {
+          "ingredient": "ถั่วงอก",
+          "qty": 50
+        },
+        {
+          "ingredient": "ผักบุ้ง",
+          "qty": 30
+        },
+        {
+          "ingredient": "ถั่วลิสงคั่วบด",
+          "qty": 1.6
+        },
+        {
+          "ingredient": "กระเทียมเจียว",
+          "qty": 1.6
+        },
+        {
+          "ingredient": "ต้นหอมผักชีซอย",
+          "qty": 1
+        },
+        {
+          "ingredient": "น้ำปลา",
+          "qty": 15
+        },
+        {
+          "ingredient": "น้ำมะนาวสด",
+          "qty": 22.5
+        },
+        {
+          "ingredient": "น้ำตาลทราย",
+          "qty": 8
+        },
+        {
+          "ingredient": "พริกป่น",
+          "qty": 3
+        },
+        {
+          "ingredient": "น้ำมันหมู",
+          "qty": 30
+        },
+        {
+          "ingredient": "น้ำ",
+          "qty": 240
+        }
+      ]
+    }
+  ],
+  "missing_cost_ingredients": [
+    "น้ำ",
+    "Tulip Dark Brown Cocoa",
+    "ไซรัปมิ้นต์",
+    "ผงมัทฉะ",
+    "ผงชาเขียวตามภาพ",
+    "ถั่วงอก",
+    "ถั่วลิสงคั่วบด",
+    "กระเทียมเจียว",
+    "น้ำปลา",
+    "พริกป่น",
+    "กระเทียม",
+    "พริกไทยเม็ด",
+    "ซีอิ๊วขาว",
+    "เกลือ",
+    "น้ำพริกเผา",
+    "ผักบุ้ง",
+    "ต้นหอมผักชีซอย",
+    "น้ำมะนาวสด",
+    "น้ำมันหมู",
+    "กระดูกหมู",
+    "หัวไชเท้า",
+    "รากผักชี",
+    "เส้นเล็กหรือเส้นหมี่",
+    "บะหมี่ไข่",
+    "หมูสับ",
+    "ลูกชิ้นหมู"
+  ],
+  "generated_price_codes": [
+    "K01-M",
+    "K02-M",
+    "K03",
+    "K03-M",
+    "M01",
+    "M01-M",
+    "G03",
+    "G03-M",
+    "NOODLE-BA-MEE-TOMYUM",
+    "NOODLE-DRY-TOMYUM"
+  ],
+  "source_policy": "Excel source plus owner-approved noodle recipes"
+}

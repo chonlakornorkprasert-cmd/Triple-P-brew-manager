@@ -1,0 +1,18 @@
+services:
+  triplepbrewmanager:
+    image: triplepbrewmanager
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: ${DATABASE_URL}
+    ports:
+      - 3001:8080
+    networks:
+      - ai-network
+
+networks:
+  ai-network:
+    external: true
+    name: ai-network
